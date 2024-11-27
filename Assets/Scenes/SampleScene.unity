@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 150817494}
-  - component: {fileID: 150817496}
   - component: {fileID: 150817495}
   - component: {fileID: 150817497}
   m_Layer: 0
@@ -155,7 +154,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1424543609}
+  - {fileID: 1272100582}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &150817495
@@ -184,21 +183,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 5, y: 2, z: 2.6}
---- !u!114 &150817496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150817493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac95c6f7a5f5c1947b05aaad41ea16e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forwardSpeed: 25
-  strafeSpeed: 7.5
-  hoverSpeed: 5
 --- !u!114 &150817497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 3fcd9ad525bbc4e4d9f87403acd9e75c, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 32aebd7599285bd4cad43dbb33064ec0, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -226,7 +210,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: StarFighterControls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1 &705507993
@@ -409,31 +393,63 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.09531098, y: 0.03335696, z: -0.0014871536, w: 0.9948874}
-  m_LocalPosition: {x: -0.86000013, y: 6.9699993, z: -10.6}
+  m_LocalPosition: {x: -12.3, y: 27.4, z: -88.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 10.938, y: 3.86, z: 0.198}
+--- !u!1 &1272100581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1272100582}
+  m_Layer: 0
+  m_Name: ShipGraphics
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1272100582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272100581}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1424543609}
+  m_Father: {fileID: 150817494}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1424543608
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 150817494}
+    m_TransformParent: {fileID: 1272100582}
     m_Modifications:
     - target: {fileID: 164696360095427260, guid: 3ccd65918d2f84f48b355c31f6301a1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.68
+      value: -5.3975396
       objectReference: {fileID: 0}
     - target: {fileID: 164696360095427260, guid: 3ccd65918d2f84f48b355c31f6301a1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 15.172026
       objectReference: {fileID: 0}
     - target: {fileID: 164696360095427260, guid: 3ccd65918d2f84f48b355c31f6301a1d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.7200003
+      value: -73.35442
       objectReference: {fileID: 0}
     - target: {fileID: 164696360095427260, guid: 3ccd65918d2f84f48b355c31f6301a1d, type: 3}
       propertyPath: m_LocalRotation.w
